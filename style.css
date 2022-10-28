@@ -246,7 +246,9 @@ footer div {
 }
 
 
-@media (min-width: 680px) {
+/* @media (min-width: 680px) { */
+
+@media (min-width: 1080px) {
 
     section {
         width: 70%;
