@@ -31,6 +31,10 @@ header .holder {
     text-align: center;
 }
 
+nav a {
+    font-size: larger;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -163,7 +167,7 @@ section {
     text-align: center;
     list-style-type: none;
     margin-bottom: 1em;
-    width: 50%;
+    width: 25%;
 }
 
 .tool {
@@ -249,8 +253,21 @@ footer div {
     min-height: 2em;
 }
 
+@media (max-width: 680px) {
 
-/* @media (min-width: 680px) { */
+    nav a {
+        font-size: large;
+    }
+
+    section {
+        width: 70%;
+    }
+
+    .tools ul li {
+        width: 50%;
+    }
+    
+}
 
 @media (min-width: 1079px) {
 
@@ -260,6 +277,7 @@ footer div {
 
     .tools ul li {
         width: 20%;
+        background-color: red;
     }
     
     header .holder {
