@@ -1,0 +1,3 @@
+[submodule "online-timer"]
+	path = online-timer
+	url = https://github.com/jimmysaints93/online-timer.git
