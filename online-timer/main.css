@@ -13,6 +13,10 @@ body {
     display: flex;
 }
 
+.transform-rotate-x {
+    transform: rotateX(90deg);
+}
+
 .center div {
     display: flex;
     justify-content: space-evenly;
@@ -23,4 +27,32 @@ body {
     color: rgb(255, 255, 255);
     font-size: 7em;
     font-family: 'Bebas Neue', 'Helvetica', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+div.handle-left {
+    margin-left: -100px;
+}
+
+div.handle-right {
+    margin-right: -100px;
+}
+
+div.handle {
+    position: absolute;
+    border-radius: 0;
+    background-color: red;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 43%, rgba(0,0,0,1) 59%, rgba(0,0,0,1) 100%);
+    width: 10px;
+    height: 20px;
+    font-size: 0;
+}
+
+div.line {
+    position: absolute;
+    border-radius: 0;
+    width: 90px;
+    height: 2px;
+    background-color: #000000;
 }
