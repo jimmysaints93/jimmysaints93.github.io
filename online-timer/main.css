@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%
+}
+
+.center {
+    display: flex;
+}
+
+.center div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    height: 150px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 7em;
+    font-family: 'Bebas Neue', 'Helvetica', sans-serif;
+}
