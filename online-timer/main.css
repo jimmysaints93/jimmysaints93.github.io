@@ -31,6 +31,12 @@ body {
     margin: 5px;
 }
 
+@media only screen and (max-width: 880px) {
+    .center div {
+        width: 70px;
+    }
+}
+
 /* div.handle-left {
     margin-left: -100px;
 }

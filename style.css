@@ -253,11 +253,8 @@ footer div {
     min-height: 2em;
 }
 
-@media (max-width: 680px) {
-
-    nav a {
-        font-size: large;
-    }
+/* @media (max-width: 680px) { */
+@media only screen and (max-width: 1079px) {
 
     section {
         width: 70%;
@@ -266,10 +263,23 @@ footer div {
     .tools ul li {
         width: 50%;
     }
-    
+
+    header .holder {
+        height: 15em;
+    }
+
+    .logo {
+        width: 7em;
+    }
+
+    body {
+        font-size: xx-large;
+    }
+
 }
 
-@media (min-width: 1079px) {
+/* @media (min-width: 1079px) { */
+@media only screen and (min-width: 1080px) {
 
     section {
         width: 70%;
