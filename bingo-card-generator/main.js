@@ -72,7 +72,11 @@ function download(){
         // document.body.appendChild(canvas)
         var download = document.getElementById("download-link");
         var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        download.setAttribute("download", "bingo-card.png")
         download.setAttribute("href", image);
+        
+
+        
     }, {
         dpi: 300,
         useCORS: true,
