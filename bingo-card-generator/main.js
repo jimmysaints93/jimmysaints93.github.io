@@ -53,14 +53,35 @@ function generate() {
             childNode.innerHTML=generatedNumbers[i][j];
         }
     }
+
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+        // document.body.appendChild(canvas)
+        var download = document.getElementById("download-link");
+        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        download.setAttribute("href", image);
+    }, {
+        dpi: 300,
+        useCORS: true,
+        allowTaint: true
+    });
+
 }
 
-generate()
-
-function download(){
-    var userAdjective = prompt("Soon. Please use screenshot for now.");
-    alert (userAdjective);
+function download(){        
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+        // document.body.appendChild(canvas)
+        var download = document.getElementById("download-link");
+        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        download.setAttribute("href", image);
+    }, {
+        dpi: 300,
+        useCORS: true,
+        allowTaint: true
+    });
 }
 
 document.getElementById("generate").onclick = generate;
 document.getElementById("download").onclick = download;
+
+
+generate()
