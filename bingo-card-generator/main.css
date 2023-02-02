@@ -92,6 +92,40 @@ td {
     font-family: 'Poppins', 'sans-serif';
 }
 
+
+.color-form {
+    margin-bottom: 8px
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -3px;
+    left: -3px;
+    position: relative;
+    background-image: inherit;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -3px;
+    left: -3px;
+    position: relative;
+    background-image: inherit;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #2A2C2D;
+}
+
+
 .malibu-beach {
     background-image: linear-gradient(to bottom right, #00F2FE 0%, #4FACFE 100%);
 }
@@ -110,7 +144,6 @@ td {
 
 .true-sunset {
     background-image: linear-gradient(to bottom right, #fee140 0%, #fa709a 100%);
-    /* background-color: #fa709a; */
 }
 
 .sharpeye-eagle {

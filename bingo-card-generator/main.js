@@ -53,18 +53,7 @@ function generate() {
             childNode.innerHTML=generatedNumbers[i][j];
         }
     }
-
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-        // document.body.appendChild(canvas)
-        var download = document.getElementById("download-link");
-        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-        download.setAttribute("href", image);
-    }, {
-        dpi: 300,
-        useCORS: true,
-        allowTaint: true
-    });
-
+    download();
 }
 
 function download(){        
@@ -74,9 +63,6 @@ function download(){
         var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
         download.setAttribute("download", "bingo-card.png")
         download.setAttribute("href", image);
-        
-
-        
     }, {
         dpi: 300,
         useCORS: true,
@@ -87,5 +73,15 @@ function download(){
 document.getElementById("generate").onclick = generate;
 document.getElementById("download").onclick = download;
 
+var radios = document.querySelectorAll(".color-input");
+console.log(radios)
+for(var i = 0, max = radios.length; i < max; i++) {
+    radios[i].onclick = function() {
+        var table = document.getElementById("capture");
+        table.className = this.value + " poppins";
+        download();
+    }
+}
 
-generate()
+generate();
+
